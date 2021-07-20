@@ -1,0 +1,7 @@
+export { Ambulance } from './Ambulance'
+export { Calendar } from './Calendar'
+export { Flasher } from './Flasher'
+export { Home } from './Home'
+export { Hospital } from './Hospital'
+export { Stethoscope } from './Stethoscope'
+export { Tooth } from './Tooth'
