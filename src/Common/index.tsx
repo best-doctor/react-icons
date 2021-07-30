@@ -1,3 +1,5 @@
 export { Copy } from './Copy'
 export { MapMarker } from './MapMarker'
 export { Chat } from './Chat'
+export { ArrowBack } from './ArrowBack'
+export { Calendar } from './Calendar'
