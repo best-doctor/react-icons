@@ -1,6 +1,6 @@
 {
   "name": "@bestdoctor/icons",
-  "version": "1.8.0-beta",
+  "version": "1.9.0-beta",
   "description": "BestDoctor icons package",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
