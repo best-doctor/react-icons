@@ -1,5 +1,4 @@
-import * as React from 'react'
-import { forwardRef, SVGAttributes } from 'react'
+import React, { forwardRef, SVGAttributes } from 'react'
 
 export const Check = forwardRef<SVGSVGElement, SVGAttributes<SVGSVGElement>>(
   ({ color = 'currentColor', ...rest }, ref): JSX.Element => (

@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { forwardRef, SVGAttributes } from 'react'
 
-export const Edit = React.forwardRef<SVGSVGElement, React.SVGAttributes<SVGSVGElement>>(
+export const Edit = forwardRef<SVGSVGElement, SVGAttributes<SVGSVGElement>>(
   ({ color = 'currentColor', strokeWidth = 0.4, ...props }, ref) => (
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18" {...props} ref={ref}>
       <path
