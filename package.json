@@ -11,7 +11,7 @@
     "format": "prettier --write 'src/**/*'",
     "typecheck": "yarn tsc --noEmit",
     "makecheck": "yarn typecheck && yarn lint",
-    "release": "standard-version"
+    "release": "standard-version --no-verify"
   },
   "author": "Valery Pavlov",
   "license": "MIT",
