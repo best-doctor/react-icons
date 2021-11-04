@@ -13,7 +13,7 @@ module.exports = {
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
     libraryTarget: 'umd',
-    library: 'ke',
+    library: '@bestdoctor/icons',
     umdNamedDefine: true,
   },
   module: {

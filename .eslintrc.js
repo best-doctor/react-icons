@@ -1,8 +1,6 @@
 module.exports = {
   plugins: ['@typescript-eslint', 'eslint-plugin-tsdoc'],
   extends: [
-    'airbnb-typescript',
-    'airbnb/hooks',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
@@ -16,7 +14,6 @@ module.exports = {
     'no-plusplus': 'off',
     // https://basarat.gitbooks.io/typescript/docs/tips/defaultIsBad.html
     'import/prefer-default-export': 'off',
-    'import/no-default-export': 'error',
     // Makes no sense to allow type inference for expression parameters, but require typing the response
     '@typescript-eslint/explicit-function-return-type': [
       'error',
@@ -39,5 +36,6 @@ module.exports = {
     // TypeScript handles it better
     'consistent-return': 'off',
     'tsdoc/syntax': 'warn',
+    '@typescript-eslint/explicit-function-return-type': 'off',
   },
 }
