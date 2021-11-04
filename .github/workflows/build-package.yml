@@ -11,15 +11,17 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Generate Icons
-      - run: yarn generate
-      - name: Commit generated icons
-      - uses: rlespinasse/git-commit-data-action@v1.x
+        run: yarn generate
+      - name: Get commit data
+        uses: rlespinasse/git-commit-data-action@v1.x
       - run: git config --local user.email "${{ env.GIT_COMMIT_AUTHOR_NAME }}"
       - run: git config --local user.name "${{ env.GIT_COMMIT_AUTHOR_EMAIL }}"
+      - name: Commit generated icons
       - run: >
           git commit -a -m "chore: add genereated icons"
       - name: Bump version
         run: yarn release
+      - name: Push
       - uses: ad-m/github-push-action@master
         with:
           branch: beta
