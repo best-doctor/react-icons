@@ -17,12 +17,12 @@ jobs:
       - run: git config --local user.email "${{ env.GIT_COMMIT_AUTHOR_NAME }}"
       - run: git config --local user.name "${{ env.GIT_COMMIT_AUTHOR_EMAIL }}"
       - name: Commit generated icons
-      - run: >
+        run: >
           git commit -a -m "chore: add genereated icons"
       - name: Bump version
         run: yarn release
       - name: Push
-      - uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@master
         with:
           branch: beta
           github_token: ${{ secrets.GITHUB_TOKEN }}
