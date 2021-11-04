@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - beta
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,7 +10,8 @@ jobs:
       - uses: actions/setup-yarn-cache-and-install@v1
       - name: Install dependencies
         run: yarn
-        run: yarn generate
+      - name: Generate Icons
+      - run: yarn generate
       - name: Commit generated icons
       - uses: rlespinasse/git-commit-data-action@v1.x
       - run: git config --local user.email "${{ env.GIT_COMMIT_AUTHOR_NAME }}"
