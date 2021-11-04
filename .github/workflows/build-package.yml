@@ -34,12 +34,22 @@ jobs:
       - name: Commit generated icons
         run: >
           git commit -a -m "chore: add genereated icons"
+      - name: Get branch name
+        id: branch-name
+        uses: tj-actions/branch-names@v5
+
+      - name: Bump beta version
+        if: steps.branch-name.outputs.current_branch == 'beta'
+        run: yarn release --prerelease beta
+
       - name: Bump version
+        if: steps.branch-name.outputs.current_branch != 'beta'
         run: yarn release
+
       - name: Push
         uses: ad-m/github-push-action@master
         with:
-          branch: beta
+          branch: ${{ steps.branch-name.outputs.current_branch }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Build package
         run: yarn build
