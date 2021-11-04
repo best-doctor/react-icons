@@ -10,7 +10,8 @@
     "lint": "eslint --ext .ts,.tsx src",
     "format": "prettier --write 'src/**/*'",
     "typecheck": "yarn tsc --noEmit",
-    "makecheck": "yarn typecheck && yarn lint"
+    "makecheck": "yarn typecheck && yarn lint",
+    "release": "standard-version"
   },
   "author": "Valery Pavlov",
   "license": "MIT",
@@ -36,6 +37,7 @@
     "lint-staged": "^10.5.4",
     "node-sass": "^6.0.1",
     "prettier": "^2.2.1",
+    "standard-version": "^9.3.2",
     "ts-loader": "^7.0.4",
     "tsconfig-paths-webpack-plugin": "^3.3.0",
     "tslib": "^2.1.0",
@@ -70,5 +72,10 @@
     "singleQuote": true,
     "tabWidth": 2,
     "trailingComma": "es5"
+  },
+  "standard-version": {
+    "skip": {
+      "changelog": true
+    }
   }
 }
