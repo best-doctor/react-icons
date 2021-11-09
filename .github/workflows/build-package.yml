@@ -81,8 +81,9 @@ jobs:
         with:
           node-version: '14.x'
 
-      - name: Get commit data
-        uses: rlespinasse/git-commit-data-action@v1.x
+      - name: Get branch name
+        id: branch-name
+        uses: tj-actions/branch-names@v5
       
       - name: Download dist
         uses: actions/download-artifact@v2
@@ -129,7 +130,7 @@ jobs:
         with:
           name: dist
 
-      - name: Indall Dependecies
+      - name: Install Dependecies
         run: yarn
         working-directory: './demo'
 
