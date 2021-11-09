@@ -64,4 +64,4 @@ jobs:
   publish-demo:
     name: Publish Demo
     if: steps.branch-name.outputs.current_branch == 'master'
-    uses: best-doctor/react-icons/.github/workflows/publish-demo.yml@v1
+    uses: best-doctor/react-icons/.github/workflows/publish-demo.yml@beta
