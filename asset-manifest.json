@@ -5,17 +5,17 @@
     "main.js.map": "/react-icons/static/js/main.427fa592.chunk.js.map",
     "runtime-main.js": "/react-icons/static/js/runtime-main.ab363525.js",
     "runtime-main.js.map": "/react-icons/static/js/runtime-main.ab363525.js.map",
-    "static/js/2.b0c614e4.chunk.js": "/react-icons/static/js/2.b0c614e4.chunk.js",
-    "static/js/2.b0c614e4.chunk.js.map": "/react-icons/static/js/2.b0c614e4.chunk.js.map",
+    "static/js/2.ea01dc75.chunk.js": "/react-icons/static/js/2.ea01dc75.chunk.js",
+    "static/js/2.ea01dc75.chunk.js.map": "/react-icons/static/js/2.ea01dc75.chunk.js.map",
     "static/js/3.d00b0e1b.chunk.js": "/react-icons/static/js/3.d00b0e1b.chunk.js",
     "static/js/3.d00b0e1b.chunk.js.map": "/react-icons/static/js/3.d00b0e1b.chunk.js.map",
     "index.html": "/react-icons/index.html",
     "static/css/main.22aa7a8a.chunk.css.map": "/react-icons/static/css/main.22aa7a8a.chunk.css.map",
-    "static/js/2.b0c614e4.chunk.js.LICENSE.txt": "/react-icons/static/js/2.b0c614e4.chunk.js.LICENSE.txt"
+    "static/js/2.ea01dc75.chunk.js.LICENSE.txt": "/react-icons/static/js/2.ea01dc75.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ab363525.js",
-    "static/js/2.b0c614e4.chunk.js",
+    "static/js/2.ea01dc75.chunk.js",
     "static/css/main.22aa7a8a.chunk.css",
     "static/js/main.427fa592.chunk.js"
   ]
