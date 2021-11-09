@@ -24,9 +24,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - run: cd demo
-      - name: Build Demo Page
-      - run: yarn
-      - run: yarn build
+      - name: Indall Dependecies
+        run: yarn
+      - name: Build package
+        run: yarn build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
