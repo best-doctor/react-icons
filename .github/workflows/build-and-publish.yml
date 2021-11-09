@@ -74,13 +74,13 @@ jobs:
         if: steps.branch-name.outputs.current_branch == 'beta'
         run: npm publish --tag beta
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
 
       - name: Publish
         if: steps.branch-name.outputs.current_branch == 'master'
         run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
      
   deploy-demo:
     needs: build-and-publish
