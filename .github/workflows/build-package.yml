@@ -63,5 +63,5 @@ jobs:
 
   publish-demo:
     name: Publish Demo
-    if: $GITHUB_HEAD_REF == 'master'
+    if: ${{ GITHUB_HEAD_REF == 'master' }}
     uses: best-doctor/react-icons/.github/workflows/publish-demo.yml@beta
