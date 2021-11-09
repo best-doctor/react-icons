@@ -4,6 +4,7 @@ on:
     branches:
       - beta
       - master
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -60,7 +61,6 @@ jobs:
           name: dist
           path: dist
 
-
-
-
-
+      - name: Publish Demo
+        if: steps.branch-name.outputs.current_branch == 'master'
+        uses: best-doctor/react-icons/.github/workflows/publish-demo.yml@v1
