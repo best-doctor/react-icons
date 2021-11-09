@@ -2,6 +2,8 @@
 
 Package containing BestDoctor icons, wrapped in React components
 
+[Demo page](https://best-doctor.github.io/react-icons/)
+
 ## Installation
 
 `$ yarn add @bestdoctor/icons`
