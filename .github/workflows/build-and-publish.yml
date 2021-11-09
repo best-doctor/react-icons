@@ -72,13 +72,13 @@ jobs:
 
       - name: Publish Beta
         if: steps.branch-name.outputs.current_branch == 'beta'
-      - run: npm publish --access public --tag beta
+        run: npm publish --access public --tag beta
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
       - name: Publish
         if: steps.branch-name.outputs.current_branch == 'master'
-      - run: npm publish --access public
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
      
