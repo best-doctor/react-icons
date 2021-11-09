@@ -9,8 +9,8 @@
       "DOM.Iterable",
       "ES2019"
     ],
-    "module": "ES6",
-    "target": "ES5",
+    "module": "ESNext",
+    "target": "ESNext",
     "outDir": "dist",
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
