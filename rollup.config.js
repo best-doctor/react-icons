@@ -19,11 +19,12 @@ export default {
       globals,
     },
     {
-      file: `dist/index.esm.js`,
+      dir: 'dist/es',
       format: 'esm',
       strict: true,
       sourcemap: true,
       exports: 'named',
+      preserveModules: true,
       globals,
     },
     {
